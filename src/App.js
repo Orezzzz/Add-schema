@@ -110,7 +110,7 @@ const Save = (e)=>{
                   <div className='dropdownschema'>
                     <div className="dropdown">
                       
-                      <button className="dropbtn">{Object.values(addedschema)} <img className='dropsymbol' src={dropsymbol} /></button>
+                      <button className="dropbtn">{Object.values(addedschema)} <img className='dropsymbol' src={dropsymbol} alt='img'/></button>
                     
                       <div className="dropdown-content">
                         {filteredschema.map((schema)=>{
@@ -130,7 +130,7 @@ const Save = (e)=>{
 
           <div className="dropdownschema">
             <div className="dropdown">
-              <button className="dropbtn">{Object.values(schema)} <img className='dropsymbol' src={dropsymbol} /></button>
+              <button className="dropbtn">{Object.values(schema)} <img className='dropsymbol' src={dropsymbol} alt='img'/></button>
               <div className="dropdown-content-2">
                 {filteredschema.map((schema)=>{
                   return <p onClick={()=> setSchema(schema)} key={Object.keys(schema)}>{Object.values(schema)}</p>
@@ -141,8 +141,8 @@ const Save = (e)=>{
           </div>
           
           <br></br><br></br>
-          
-          <a className="add-schema" onClick={Addschema}><u>+ Add new schema</u></a><br></br><br></br>
+
+          <a className="add-schema" onClick={Addschema} href="/"><u>+ Add new schema</u></a><br></br><br></br>
           <div className="save-cancel-button">
           <button className="savebtn" type="submit" onClick={Save}>save segment</button>
           <button className="cancelbtn" onClick={Cancel}>Cancel</button>
