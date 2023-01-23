@@ -142,7 +142,7 @@ const Save = (e)=>{
           
           <br></br><br></br>
 
-          <a className="add-schema" onClick={Addschema} href="/"><u>+ Add new schema</u></a><br></br><br></br>
+          <p className="add-schema" onClick={Addschema} ><u>+ Add new schema</u></p><br></br><br></br>
           <div className="save-cancel-button">
           <button className="savebtn" type="submit" onClick={Save}>save segment</button>
           <button className="cancelbtn" onClick={Cancel}>Cancel</button>
